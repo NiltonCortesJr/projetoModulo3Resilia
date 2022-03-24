@@ -13,7 +13,7 @@ Grupo 2
 	Integrantes:
 
 🏎️  Fernanda Barreto  📉        
-🏎️  Fernando Oliveira  🖥️      
+🏎️  Felipe Oliveira  🖥️      
 🏎️  Lucas Mendonça  📈     
 🏎️  Nilton Cortes Jr  🖱️        
 🏎️  Vitor Del'Duca  🖥️
