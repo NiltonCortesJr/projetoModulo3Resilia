@@ -1,0 +1,23 @@
+SELECT
+d.driverId,
+concat(forename, ' ', surname) as Piloto,
+position,
+nationality,
+raceId,
+count(*) as n_vitorias,
+
+FROM
+mod3_formula1.drivers as d
+
+INNER JOIN
+mod3_formula1.results as r
+
+ON
+d.driverId = r.driverId
+
+WHERE
+position = 1
+
+GROUP BY
+driverId
+

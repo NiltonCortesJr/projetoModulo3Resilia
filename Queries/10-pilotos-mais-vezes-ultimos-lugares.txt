@@ -1,0 +1,26 @@
+SELECT
+r.driverId,
+concat(forename,' ',surname) as Piloto,
+nationality,
+count(*) as vezes_ultimos_lugares
+
+FROM
+mod3_formula1.drivers as d
+
+INNER JOIN
+mod3_formula1.results as r
+
+ON
+d.driverId = r.driverId
+
+WHERE
+position between 20 and 33
+
+GROUP BY
+driverId
+
+ORDER BY
+vezes_ultimos_lugares DESC
+
+LIMIT
+10
