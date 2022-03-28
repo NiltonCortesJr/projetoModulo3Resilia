@@ -46,5 +46,8 @@ FROM
  ON
  d.driverId = crc.driverId
  
- GROUP BY
+ GROUP BY 
  driverId
+
+ ORDER BY
+ numero_Vitorias desc
