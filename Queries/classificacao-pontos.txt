@@ -1,22 +1,26 @@
-SELECT
-concat(forename, ' ', surname) as Piloto,
-nationality,
-sum(points) as TotalDePontos
+-- Querie lista os 5 pilotos mundiais que mais obtiveram pontos.
 
- FROM
+SELECT
+	concat(forename, ' ', surname) as Piloto,
+	nationality,
+	sum(points) as TotalDePontos
+
+FROM
  
- mod3_formula1.results as r
+ 	mod3_formula1.results as r
  
- INNER JOIN
+INNER JOIN
  
- mod3_formula1.drivers as d
+ 	mod3_formula1.drivers as d
  
- ON
+ON
  
- r.driverId = d.driverId
+ 	r.driverId = d.driverId
  
- GROUP BY
- r.driverId
+GROUP BY
+	r.driverId
  
- ORDER BY
- TotalDePontos desc
+ORDER BY
+ 	TotalDePontos desc
+LIMIT
+	5;

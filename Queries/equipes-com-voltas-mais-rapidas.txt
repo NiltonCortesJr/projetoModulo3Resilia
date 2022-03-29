@@ -1,22 +1,26 @@
-SELECT
-name,
-nationality,
-fastestLapTime
+-- Querie lista os 5 equipes que mais obtiveram voltas mais rápidas.
 
- FROM 
+SELECT
+	name,
+	nationality,
+	fastestLapTime
+
+FROM 
  
- mod3_formula1.results as r
+ 	mod3_formula1.results as r
  
- INNER JOIN
+INNER JOIN
  
- mod3_formula1.constructors as c
+ 	mod3_formula1.constructors as c
  
- ON
+ON
  
- r.constructorId = c.constructorId
+ 	r.constructorId = c.constructorId
  
- HAVING
- fastestLapTime is not null
+HAVING
+ 	fastestLapTime is not null
  
- ORDER BY
- fastestLapTime
+ORDER BY
+ 	fastestLapTime
+LIMIT
+	5;

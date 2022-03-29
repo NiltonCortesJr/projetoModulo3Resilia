@@ -1,0 +1,38 @@
+-- Querie lista os 5 pilotos que mais rápidos.
+
+SELECT
+	Piloto,
+	duration,
+	name
+FROM
+	mod3_formula1.races as r
+
+INNER JOIN
+
+	(SELECT
+		raceId,
+		p.driverId,
+		concat(forename,' ',surname) as Piloto,
+		duration,
+		nationality
+ 	FROM
+ 
+ 		mod3_formula1.pitstops as p
+ 
+ 	LEFT JOIN
+ 		mod3_formula1.drivers as d
+ 
+ 	ON
+ 		p.driverId = d.driverId
+ 
+ 	ORDER BY
+ 		duration) as pd
+ 
+ON
+ 	r.raceId = pd.raceId
+ 
+ORDER BY
+ 	duration
+ 
+LIMIT
+	5;

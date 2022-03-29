@@ -1,21 +1,23 @@
+-- Querie lista os 5 pilotos que mais obtiveram as voltas mais rápidas.
+
 SELECT
-laptimes.driverId,
-concat(forename, " ", surname),
-nationality,
-time,
-milliseconds
+	laptimes.driverId,
+	concat(forename, " ", surname),
+	nationality,
+	time,
+	milliseconds
 
 FROM 
-mod3_formula1.laptimes
+	mod3_formula1.laptimes
 
 INNER JOIN
-drivers
+	drivers
 
 ON
-drivers.driverId = laptimes.driverId
+	drivers.driverId = laptimes.driverId
 
 ORDER BY
-time, milliseconds
+	time, milliseconds
 
 LIMIT
-5
+	5;
