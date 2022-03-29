@@ -21,4 +21,4 @@ Grupo 2
 
 	Ferramentas e Linguagens
 	
-MySql Server 🎲  - - MySql Workbench 🎲  - - Power BI 📉  📈  - - HTML 🖥️  - - CSS 💻  - - JavaScript 🖥️ 
+MySql Server 🎲  - - MySql Workbench 🎲  - - Power BI 📉  📈  - - Excel 🖥️  - - LibreOffice 💻  - - PowerPoint 🖥️ 
