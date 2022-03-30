@@ -20,7 +20,7 @@ Os objetivos usados nessa sprint foram:
 
 Sprint 2:
 Os objetivos usados nessa sprint foram:
-- criar visualizações dos dados com base nas perguntas elaboradas na sprint anterior (Excel / Google, Metabase, Tableau, Power Bi);
+- criar visualizações dos dados com base nas perguntas elaboradas na sprint anterior (Excel, Power Bi);
 - montar uma apresentação a partir das perguntas e análise exploratória feita em cima do conjunto de dados selecionados.
 
 ## Metodologias ágeis:
@@ -49,4 +49,4 @@ Utilizado técnicas e ferramentas vistas em conteúdo Soft quanto a metodologia
 
 **Ferramentas e Linguagens utilizadas:**
 	
-MySql Server 🎲  - - MySql Workbench 🎲  - - Power BI 📉  📈  - - Excel 🖥️  - - LibreOffice 💻  - - PowerPoint 🖥️ 
+MySql Server 🎲  - - MySql Workbench 🎲  - - Power BI 📉  📈  - - Excel 🖥️  - - LibreOffice 💻  - - PowerPoint 🖥️  - - CorelDraw 🖥️  - - Sony Vegas 🖥️ 
