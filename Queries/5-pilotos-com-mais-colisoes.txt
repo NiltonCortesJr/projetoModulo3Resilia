@@ -1,0 +1,38 @@
+-- Querie lista os 5 pilotos que mais colidiram.
+
+SELECT
+    concat(forename, ' ', surname) as Piloto,
+    count(*) as Nr_de_Colisoes,
+    nationality
+
+
+FROM
+   drivers as d
+
+INNER JOIN
+
+	(SELECT 
+	    driverId
+	FROM 
+	    formula1_db.status as s
+
+	INNER JOIN 
+	    formula1_db.results as r
+
+	ON 
+	    s.statusId = r.statusId
+
+	WHERE
+	    r.statusId = 4) as colisao
+
+
+ON
+    d.driverId = colisao.driverId
+    
+GROUP BY
+    colisao.driverId
+    
+ORDER BY
+    Nr_de_Colisoes DESC
+
+LIMIT 5
