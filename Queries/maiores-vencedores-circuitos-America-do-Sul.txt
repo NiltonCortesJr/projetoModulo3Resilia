@@ -1,0 +1,55 @@
+-- Querie lista os 5 pilotos brasileiros Sul Americanos que mais obtiveram pontos.
+
+SELECT
+	concat(forename, ' ', surname) as Piloto,
+	crc.driverId,
+	count(*) as numero_Vitorias
+
+FROM
+	mod3_formula1.drivers as d
+
+RIGHT JOIN
+	(SELECT
+	r.raceId as race,
+	r.driverId,
+	cr.name as Local,
+	cr.circuitId,
+	cr.country,
+	cr.raceId,
+	raceName as Circuit,
+	r.position
+
+FROM
+	mod3_formula1.results as r
+
+	RIGHT JOIN
+		(SELECT
+			c.name,
+			c.circuitId,
+			c.country,
+			r.raceId,
+			r.name as raceName
+	FROM
+ 		mod3_formula1.circuits as c
+ 
+ 	RIGHT JOIN
+ 		mod3_formula1.races as r
+ 
+	ON
+ 		c.circuitId = r.circuitId) as cr
+ON
+ 	r.raceid = cr.raceid
+ 
+WHERE
+	country in ('Brazil', 'Argentina') and position = 1) as crc
+ 
+ON
+ 	d.driverId = crc.driverId
+ 
+GROUP BY 
+ 	driverId
+
+ORDER BY
+	numero_Vitorias desc
+LIMIT
+	5;

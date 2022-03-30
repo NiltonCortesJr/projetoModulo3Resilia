@@ -1,4 +1,4 @@
--- Querie lista os 5 pilotos mundiais que mais obtiveram pontos.
+-- Querie lista os 5 pilotos brasileiros que mais obtiveram pontos.
 
 SELECT
 	concat(forename, ' ', surname) as Piloto,
@@ -7,7 +7,7 @@ SELECT
 
 FROM
  
- 	mod3_formula1.results as r
+	mod3_formula1.results as r
  
 INNER JOIN
  
@@ -20,7 +20,10 @@ ON
 GROUP BY
 	r.driverId
  
+HAVING
+	nationality = 'Brazilian'
+ 
 ORDER BY
- 	TotalDePontos desc
+	TotalDePontos desc
 LIMIT
 	5;

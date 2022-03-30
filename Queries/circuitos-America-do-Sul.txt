@@ -1,0 +1,12 @@
+-- Querie lista os circuitos da América do Sul.
+
+SELECT
+	name,
+	location,
+	country
+
+FROM 
+	mod3_formula1.circuits
+
+WHERE
+	country in ('Brazil', 'Chile', 'Argentina', 'Uruguay', 'Colombia', 'Paraguay', 'Venezuela', 'Bolivia', 'Suriname', 'Guyane', 'Ecuador')
