@@ -8,7 +8,7 @@
 ## Objetivo do projeto:
 A squad deverá montar um dashboard com base no conjunto de dados escolhidos, realizando uma apresentação com a exploração dos dados.
 
-Sprints:
+## Sprints: 
 
 Sprint 1:
 Os objetivos usados nessa sprint foram:
@@ -23,23 +23,26 @@ Os objetivos usados nessa sprint foram:
 - criar visualizações dos dados com base nas perguntas elaboradas na sprint anterior (Excel / Google, Metabase, Tableau, Power Bi);
 - montar uma apresentação a partir das perguntas e análise exploratória feita em cima do conjunto de dados selecionados.
 
-Metodologias ágeis:
-Utilize as técnicas e ferramentas vistas quanto a metodologias ágeis na implementação do projeto:
-Criação de backlog
-Planejamento de Sprint e distribuição de tarefas
-Utilização de Kanbam como ferramenta de acompanhamento para desenvolvimento das atividades Realizar retrospectiva ao final de cada Sprint
+## Metodologias ágeis:
+
+Utilizado técnicas e ferramentas vistas em conteúdo Soft quanto a metodologias ágeis na implementação do projeto:
+- Criação de backlog
+- Planejamento de Sprint e distribuição de tarefas
+- Utilização de Kanbam como ferramenta de acompanhamento para desenvolvimento das atividades Realizar retrospectiva ao final de cada Sprint
 
 ## Progresso do trabalho:
 ![progress](https://progress-bar.dev/100/ "progresso")
 
-```
-**Integrantes - Grupo 2:**
 
+### Equipe:
+
+```
 🏎️  Fernanda Barreto  📉     
 🏎️  Felipe Oliveira  🖥️    
 🏎️  Lucas Mendonça  📈     
 🏎️  Nilton Cortes Jr  🖱️      
 🏎️  Vitor Del'Duca  🖥️ 	
+
 ```
 
 
